@@ -1,31 +1,39 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2011
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AdditionCalculator", "AdditionCalculator\AdditionCalculator.vcxproj", "{4E28F5B7-4A11-4AD7-AD87-CEC9CB7E1475}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4E28F5B7-4A11-4AD7-AD87-CEC9CB7E1475}.Debug|x64.ActiveCfg = Debug|x64
-		{4E28F5B7-4A11-4AD7-AD87-CEC9CB7E1475}.Debug|x64.Build.0 = Debug|x64
-		{4E28F5B7-4A11-4AD7-AD87-CEC9CB7E1475}.Debug|x86.ActiveCfg = Debug|Win32
-		{4E28F5B7-4A11-4AD7-AD87-CEC9CB7E1475}.Debug|x86.Build.0 = Debug|Win32
-		{4E28F5B7-4A11-4AD7-AD87-CEC9CB7E1475}.Release|x64.ActiveCfg = Release|x64
-		{4E28F5B7-4A11-4AD7-AD87-CEC9CB7E1475}.Release|x64.Build.0 = Release|x64
-		{4E28F5B7-4A11-4AD7-AD87-CEC9CB7E1475}.Release|x86.ActiveCfg = Release|Win32
-		{4E28F5B7-4A11-4AD7-AD87-CEC9CB7E1475}.Release|x86.Build.0 = Release|Win32
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F731D3AF-ACD3-4A19-8A6B-2A2C5173B272}
-	EndGlobalSection
-EndGlobal
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+void PrintTextWithForLoop() {
+	for (int i = 0; i < 12; i++)
+	{
+		cout << "For Loop " << i << endl;
+	}
+}
+
+int main()
+{
+	int number1;
+	int number2;
+	int sum;
+
+	cout << "Enter a number: ";
+	cin >> number1;
+	cout << "Enter another number: ";
+	cin >> number2;
+
+	sum = number1 + number2;
+	cout << "The sum of " << number1 << " and " << number2 << " is " << sum << endl;
+	
+	PrintTextWithForLoop();
+
+	// while loop
+	int j = 0;
+	while (j < 12) {
+		cout << "While Loop " << j << endl;
+		j++;
+	}
+
+	system("pause");
+
+    return 0;
+}
